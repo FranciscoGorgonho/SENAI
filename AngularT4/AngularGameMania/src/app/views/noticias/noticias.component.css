@@ -1,0 +1,105 @@
+
+/* CSS da página Noticias */
+
+.espaco-produtos-noticias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.cardnews-noticias {
+    width: 20em;
+    height: 10em;
+    /* background: linear-gradient(180deg, rgba(83, 83, 83, 0.5) 0%, #000000 100%); */
+    /* color: #fff; */
+    margin-bottom: 10em;
+    box-shadow: 0px 0px 10px rgb(255, 255, 255), 0px 0px 30px rgb(0, 0, 0);
+}
+
+.cardnews-noticias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20em;
+    height: 20em;
+}
+
+.cardnews-noticias img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.texto-card {
+    width: 100%;
+    /* height: 10%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.texto-card p {
+    margin: 10px;
+} 
+
+.banner {
+    height: 710px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-pslogo {
+    background-image: url(/assets/img/sonylogo.jpg);
+}
+
+.banner-controlelogo {
+    background-image: url(/assets/img/pslogo.jpg);
+}
+
+.banner-wallpaperlogo {
+    background-image: url(/assets/img/controlelogo.jpg);
+}
+
+.posicionamento-banner {
+    height: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.conteudo-banner {
+    width: 495px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.conteudo-banner a {
+    padding: 15px;
+    color: white;
+    background-color: #C31616;
+    border-radius: 5px;
+    font-family: "Roboto";
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.conteudo-banner h1 {
+    font-family: "Titillium Web";
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.conteudo-banner p {
+    font-family: "Roboto";
+    font-size: 25px;
+}
