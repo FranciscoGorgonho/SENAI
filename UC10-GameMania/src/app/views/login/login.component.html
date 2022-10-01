@@ -1,0 +1,27 @@
+<main class="login">
+    <section class="signin signin-dark-form">
+        <h1 class="title">Inicie uma sessão no PlayStation com uma das suas contas da Sony</h1>
+
+        <form class="signin-form" action="/signin" method="post" (ngSubmit)="onSubmit()">
+        <label for="login-email" class="dark-label signin-dark--bold">E-mail</label>
+        <input class="fill-with-cached-email dark-input " type="email" required="" name="email" id="email" value=""
+            autofocus="" [(ngModel)]="loginModel.email">
+
+        <div id="form-default">
+            <label for="password" class="dark-label signin-dark--bold">Senha</label>
+            <input type="password" class="dark-input " required="" name="password" id="senha" autocomplete="off"
+                [(ngModel)]="loginModel.password">
+
+            <!-- <input type="hidden" name="uriOnError" value="" [ngModel]=""> -->
+
+            <button class="btn-login btn-principal-form-dark" type="submit">Entrar</button>
+
+            <a class="forgotPassword-link">Esqueci minha senha</a>
+        </div>
+
+        </form>
+        <!-- Renderização condicional -->
+        <p id="mensagem" *ngIf=" mensagem != '' ">{{mensagem}}</p>
+        
+    </section>
+</main>

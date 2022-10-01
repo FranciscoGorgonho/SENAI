@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "nome": "Dante Medeiros",
+      "email": "dante@email.com",
+      "password": "$2a$10$YioGLVHZnArU.nokeB3VFeJ36h6W88wrcH.t0Pd/0eEwjGWBW.Ud.",
+      "id": 1
+    },
+    {
+      "email": "camilla@gmail.com",
+      "password": "$2a$10$XatAQ9CTVHoLRxBOG35y2uWw9U.XYWPLR31p2/D0ZgnloxlWAiIay",
+      "nome": "Camilla",
+      "id": 3
+    },
+    {
+      "email": "jose@email.com",
+      "password": "$2a$10$KTXTMsJF0aEa4uSXB4QhRuORyiDWNSWWbnAzd3mRji.TdobKWaA6C",
+      "nome": "Jose",
+      "id": 4
+    }
+  ]
+}

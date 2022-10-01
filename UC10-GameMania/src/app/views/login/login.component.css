@@ -1,0 +1,130 @@
+/* CSS página Login  */
+ 
+.login {
+    /* background: #051933; */
+    background-image: url(/assets/img/wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.forgotPassword {
+    display: none
+}
+
+.forgotPassword,
+.signin {
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 3em;
+    max-width: 500px
+}
+
+.title {
+    font-weight: 800;
+    letter-spacing: -.5px;
+    font-size: 2rem;
+    margin-bottom: 8px
+}
+
+.forgotPassword .title {
+    margin: 1em 0
+}
+
+.forgotPassword label,
+.signin-form label {
+    display: block;
+    text-align: left;
+    font-size: 1.1em
+}
+
+.signin-form-idp {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center
+}
+
+.btn-login,
+.forgotPassword-btn {
+    color: #fff;
+    border: none;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 3px;
+    background-color: #747c81;
+    min-width: 195px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 1em;
+    padding: .4em 0
+}
+
+.forgotPassword-link {
+    display: block;
+    cursor: pointer;
+    text-decoration: underline;
+    margin: 3em 0 1em
+}
+
+.linkhome {
+        display: block;
+        cursor: pointer;
+        text-decoration: underline;
+        padding-right: 10px;
+        
+}
+
+* {
+    color: #fff;
+    font-family: Inter, sans-serif
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.signin-dark-form {
+    position: relative;
+    overflow: hidden;
+    background: rgba(9, 51, 102, .4);
+    border: .5px solid #167bf7;
+    border-radius: .3125em;
+    
+}
+
+.signin-dark-form .dark-input {
+    margin-bottom: 1em;
+    width: 100%;
+    border: 1px solid #051933;
+    border-radius: .5em;
+    padding: 1em;
+    background: #051933
+}
+
+.btn-principal-form-dark {
+    margin-top: 1.5em;
+    background-color: #a3ffbf;
+    color: #051932;
+    border-radius: 24px;
+    padding: .75em 1.1875em;
+}
+
+.btn-principal-form-dark {
+    transition-duration: 0.5s;
+}
+
+.btn-principal-form-dark:hover {
+    background-color: rgba(26, 82, 104, 0.76);
+    color:white;
+}
+
+

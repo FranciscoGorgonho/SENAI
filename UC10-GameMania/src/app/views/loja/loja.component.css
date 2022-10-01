@@ -1,0 +1,87 @@
+
+/*CSS da página lojas */
+
+.espaco-produtos-loja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+.cardnews-loja {
+    width: 15em;
+    height: 15em;
+    background: linear-gradient(180deg, rgba(231, 7, 7, 0.5) 0%, #000000 100%);
+    color: rgb(0, 0, 0);
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0), 0px 0px 30px rgb(0, 0, 0);
+}
+
+.cardnews-loja {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardnews-loja img {
+    width: 100%;
+}
+
+.banner {
+    height: 710px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner-pslogo {
+    background-image: url(/assets/img/sonylogo.jpg);
+}
+
+.banner-controlelogo {
+    background-image: url(/assets/img/pslogo.jpg);
+}
+
+.banner-wallpaperlogo {
+    background-image: url(/assets/img/controlelogo.jpg);
+}
+
+.posicionamento-banner {
+    height: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.conteudo-banner {
+    width: 495px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.conteudo-banner a {
+    padding: 15px;
+    color: white;
+    background-color: #C31616;
+    border-radius: 5px;
+    font-family: "Roboto";
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.conteudo-banner h1 {
+    font-family: "Titillium Web";
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.conteudo-banner p {
+    font-family: "Roboto";
+    font-size: 25px;
+}
