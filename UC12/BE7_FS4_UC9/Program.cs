@@ -1,60 +1,121 @@
 ﻿// See https://aka.ms/new-console-template for more information
-
+using BE7_FS4_UC9;
 using BE7_FS4_UC9.Classes;
 
-/*
-PessoaFisica novaPf = new PessoaFisica();
-Endereco novoEnd = new Endereco();
-
-PessoaFisica metodoPf = new PessoaFisica();
-
-novaPf.nome = "Luiz";
-novaPf.dataNascimento = "18/02/1984";
-novaPf.cpf = "12345678900";
-novaPf.rendimento = 600.0f;
-
-novoEnd.logradouro = "Alameda Barao de Limeira";
-novoEnd.numero = 539;
-novoEnd.complemento = "Senai Informatica";
-novoEnd.endComercial = true;
-
-novaPf.endereco = novoEnd;
 
 Console.WriteLine(@$"
-Nome: {novaPf.nome}
-Endereco: {novaPf.endereco.logradouro}, {novaPf.endereco.numero}
-Maior de idade: {metodoPf.ValidarDataNascimento(novaPf.dataNascimento)}
+=================================================================================
+*                                                                               *
+*                              Seja Bem Vindo !                                 *
+*               Sistema de Cadastro de Pessoas Físicas e Jurídicas              *
+*                                                                               *
+=================================================================================
 ");
-*/
-/*
-novaPf.nome = "Lozano";
-Console.WriteLine(novaPf.nome);
-Console.WriteLine("Nome: " + novaPf.nome);
-Console.WriteLine($"Nome: {novaPf.nome}");
-*/
 
-//Console.WriteLine(novaPf.ValidarDataNascimento(new DateTime(2000,01,01)));
 
-//*Console.WriteLine(novaPf.ValidarDataNascimento(new DateTime(2000,01,01)));
+BarraCarregamento("Carregando",200);
 
-PessoaJuridica metodoPj = new PessoaJuridica();
-PessoaJuridica novaPj = new PessoaJuridica();
-Endereco novoEndPj = new Endereco();
+string? opcao;
 
-novaPj.nome ="NomePj";
-novaPj.cnpj ="00000000000100";
-novaPj.razaoSocial ="Razao Social Pj";
-novaPj.rendimento = 8000.5f;
+do
+{
+    Console.Clear();
+    Console.WriteLine(@$"
+=================================================================================
+*                                                                               *
+*                            Escolha uma das Opções:                            *
+*_______________________________________________________________________________*
+*                                                                               *
+*                              1 - Pessoa Física                                *
+*                              2 - Pessoa Jurídica                              *
+*                                                                               *
+*                              0  - Sair                                        *
+*                                                                               *
+=================================================================================
+");
 
-novoEndPj.logradouro = "Alameda Barao de Limeira";
-novoEndPj.numero = 539;
-novoEndPj.complemento = "Senai Informática";
-novoEndPj.endComercial = true;
-novaPj.endereco = novoEndPj;
+    opcao = Console.ReadLine();
 
-Console.WriteLine(@$"
-Nome: {novaPj.nome}
-Razao Social: {novaPj.razaoSocial}
-CNPJ: {novaPj.cnpj}
-CNPJ é válido: {metodoPj.ValidarCnpj(novaPj.cnpj)}");
+    switch (opcao)
+    {
+        case "1":
+            PessoaFisica novaPf = new PessoaFisica();
+            Endereco novoEnd = new Endereco();
+            PessoaFisica metodoPf = new PessoaFisica();
+            novaPf.nome = "Dante Medeiros";
+            novaPf.dataNascimento = "10/07/2020";
+            novaPf.cpf = "177.182.300-55";
+            novaPf.rendimento = 600.0f;
+            novoEnd.logradouro = "Praça Dezoito de Fevereiro";
+            novoEnd.numero = 27;
+            novoEnd.complemento = "Casa";
+            novoEnd.endComercial = true;
+            novaPf.endereco = novoEnd;
+
+            Console.WriteLine(@$"
+            Nome: {novaPf.nome}
+            Endereço: {novaPf.endereco.logradouro}, {novaPf.endereco.numero}
+            Maior de idade: {metodoPf.ValidarDataNascimento(novaPf.dataNascimento)}");
+            Console.WriteLine($"Digite Enter para sair");
+            Console.ReadLine();
+
+            break;
+
+
+        case "2":
+            PessoaJuridica metodoPj = new PessoaJuridica();
+            PessoaJuridica novaPj = new PessoaJuridica();
+            Endereco novoEndpj = new Endereco();
+
+            novaPj.nome = "KABUM";
+            novaPj.cnpj = "17.184.037/0373-70";
+            novaPj.razaoSocial = "KABUM COMÉRCIO ELETRÔNICO S.A";
+            novaPj.rendimento = 600;
+
+            novoEndpj.logradouro = "Avenida Campos Sales";
+            novoEndpj.numero = 281;
+            novoEndpj.complemento = "Galpão 07";
+            novoEndpj.endComercial = true;
+
+
+            Console.WriteLine($@"
+            Nome: {novaPj.nome}
+            Razão Social: {novaPj.razaoSocial}
+            CNPJ: {novaPj.cnpj}
+            CNPJ é valido: {metodoPj.ValidarCnpj(novaPj.cnpj)}");
+
+            Console.WriteLine($"Digite Enter para sair");
+            Console.ReadLine();
+            break;
+
+        case "0":
+            Console.WriteLine($"Obrigada por utilizar nosso Sistema");
+            BarraCarregamento("Finalizando", 300);
+
+            break;
+
+        default:
+            Console.Clear();
+            Console.WriteLine($"Opção Inválida - Digite outra Opção");
+            Thread.Sleep(3000);
+            break;
+    }
+
+} while (opcao != "0");
+
+static void BarraCarregamento(string texto, int tempo)
+{
+    Console.BackgroundColor = ConsoleColor.Yellow;
+    Console.ForegroundColor = ConsoleColor.DarkBlue;
+
+    Console.Write($"{texto}");
+
+    for (var contador = 0; contador < 35; contador++)
+    {
+        Console.Write(". ");
+        Thread.Sleep(250);
+    }
+
+    Console.ResetColor();
+}
 
