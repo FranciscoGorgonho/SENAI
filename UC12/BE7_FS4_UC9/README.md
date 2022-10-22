@@ -1,4 +1,4 @@
-# sistema de cadastro de Pessoas Físicas e Jurídicas
+# Sistema de cadastro de Pessoas Físicas e Jurídicas
 ## Features
 - Cadastro de Pessoas Físicas em arquivos txt
 - Cadastro de Pessoas Jurídicas em arquivo CSV único
@@ -35,7 +35,7 @@ To install additional .NET runtimes or SDKs: https://aka.ms/dotnet-download
 
 ## Contribuição
 - Instituição SENAI: https://sp.senai.br/
-- Pofessor Luiz Lozano: https://github.com/professorlucianoz
+- Professor Luiz Lozano: https://github.com/professorlucianoz
 
 
 
