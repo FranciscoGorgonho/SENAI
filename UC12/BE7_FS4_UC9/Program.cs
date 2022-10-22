@@ -13,7 +13,7 @@ Console.WriteLine(@$"
 ");
 
 
-BarraCarregamento("Carregando",200);
+BarraCarregamento("Carregando", 200);
 
 string? opcao;
 
@@ -43,9 +43,9 @@ do
             Endereco novoEnd = new Endereco();
             PessoaFisica metodoPf = new PessoaFisica();
             novaPf.nome = "Dante Medeiros";
-            novaPf.dataNascimento = "10/07/2020";
+            novaPf.dataNascimento = "10/07/1991";
             novaPf.cpf = "177.182.300-55";
-            novaPf.rendimento = 600.0f;
+            novaPf.rendimento = 2000.0f;
             novoEnd.logradouro = "Praça Dezoito de Fevereiro";
             novoEnd.numero = 27;
             novoEnd.complemento = "Casa";
@@ -55,10 +55,12 @@ do
             Console.WriteLine(@$"
             Nome: {novaPf.nome}
             Endereço: {novaPf.endereco.logradouro}, {novaPf.endereco.numero}
-            Maior de idade: {metodoPf.ValidarDataNascimento(novaPf.dataNascimento)}");
-            Console.WriteLine($"Digite Enter para sair");
-            Console.ReadLine();
+            Maior de idade: {(metodoPf.ValidarDataNascimento(novaPf.dataNascimento) ? "Sim" : "Não")}
+            Taxa de Imposto a ser paga é: {metodoPf.PagarImposto(novaPf.rendimento).ToString("C")}
+            ");
 
+            Console.WriteLine ($"Digite Enter para continuar");
+            Console.ReadLine();
             break;
 
 
@@ -68,10 +70,9 @@ do
             Endereco novoEndpj = new Endereco();
 
             novaPj.nome = "KABUM";
-            novaPj.cnpj = "17.184.037/0373-70";
+            novaPj.cnpj = "17.184.037/0001-70";
             novaPj.razaoSocial = "KABUM COMÉRCIO ELETRÔNICO S.A";
-            novaPj.rendimento = 600;
-
+            novaPj.rendimento = 8000.5f;
             novoEndpj.logradouro = "Avenida Campos Sales";
             novoEndpj.numero = 281;
             novoEndpj.complemento = "Galpão 07";
@@ -82,14 +83,16 @@ do
             Nome: {novaPj.nome}
             Razão Social: {novaPj.razaoSocial}
             CNPJ: {novaPj.cnpj}
-            CNPJ é valido: {metodoPj.ValidarCnpj(novaPj.cnpj)}");
+            CNPJ é válido: {(metodoPj.ValidarCnpj(novaPj.cnpj) ?"Sim":"Não" )}
+            O valor do imposto é: {metodoPj.PagarImposto(novaPj.rendimento).ToString("C")}
+            ");
 
             Console.WriteLine($"Digite Enter para sair");
             Console.ReadLine();
             break;
 
         case "0":
-            Console.WriteLine($"Obrigada por utilizar nosso Sistema");
+            Console.WriteLine($"Obrigado por utilizar nosso Sistema");
             BarraCarregamento("Finalizando", 300);
 
             break;
@@ -118,4 +121,5 @@ static void BarraCarregamento(string texto, int tempo)
 
     Console.ResetColor();
 }
+
 
