@@ -2,10 +2,10 @@ using BE7_FS4_UC9.Interfaces;
 
 namespace BE7_FS4_UC9.Classes
 {
-        public class PessoaFisica : Pessoa, IPessoaFisica
+    public class PessoaFisica : Pessoa, IPessoaFisica
     {
         public string ?cpf { get; set; }
-        public DateTime ?dataNascimento { get; set; }    
+        public string ?dataNascimento { get; set; }    
         
         
         public override float PagarImposto(float rendimento)
@@ -13,9 +13,32 @@ namespace BE7_FS4_UC9.Classes
             throw new NotImplementedException();
         }
 
+        
         public bool ValidarDataNascimento(DateTime dataNasc)
         {
-        throw new NotImplementedException();
-        }   
+            DateTime dataAtual = DateTime.Today;
+            double anos = (dataAtual - dataNasc).TotalDays /365;
+            if(anos >= 18){
+                return true;
+            }
+            return false;
+        }
+        
+
+        public bool ValidarDataNascimento(string dataNasc)
+        {
+            DateTime dataConvertida;
+            //verificar se a string esta em um formado valido
+            if(DateTime.TryParse(dataNasc, out dataConvertida)){//tryParse tenta converter e coloca na saida out 
+                //Console.WriteLine($"{dataConvertida}");
+                DateTime dataAtual = DateTime.Today;
+                double anos = (dataAtual - dataConvertida).TotalDays /365;
+                if(anos >= 18){
+                    return true;
+                }
+                return false;
+            }
+            return false;            
+        } 
     }
 }
