@@ -1,0 +1,12 @@
+C:\Senai_FullStack\UC15\Encontro Remoto 2\Projeto_teste\Projeto_teste\Projeto_teste\bin\Debug\net6.0\Projeto_teste.deps.json
+C:\Senai_FullStack\UC15\Encontro Remoto 2\Projeto_teste\Projeto_teste\Projeto_teste\bin\Debug\net6.0\Projeto_teste.dll
+C:\Senai_FullStack\UC15\Encontro Remoto 2\Projeto_teste\Projeto_teste\Projeto_teste\bin\Debug\net6.0\Projeto_teste.pdb
+C:\Senai_FullStack\UC15\Encontro Remoto 2\Projeto_teste\Projeto_teste\Projeto_teste\obj\Debug\net6.0\Projeto_teste.csproj.AssemblyReference.cache
+C:\Senai_FullStack\UC15\Encontro Remoto 2\Projeto_teste\Projeto_teste\Projeto_teste\obj\Debug\net6.0\Projeto_teste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Senai_FullStack\UC15\Encontro Remoto 2\Projeto_teste\Projeto_teste\Projeto_teste\obj\Debug\net6.0\Projeto_teste.AssemblyInfoInputs.cache
+C:\Senai_FullStack\UC15\Encontro Remoto 2\Projeto_teste\Projeto_teste\Projeto_teste\obj\Debug\net6.0\Projeto_teste.AssemblyInfo.cs
+C:\Senai_FullStack\UC15\Encontro Remoto 2\Projeto_teste\Projeto_teste\Projeto_teste\obj\Debug\net6.0\Projeto_teste.csproj.CoreCompileInputs.cache
+C:\Senai_FullStack\UC15\Encontro Remoto 2\Projeto_teste\Projeto_teste\Projeto_teste\obj\Debug\net6.0\Projeto_teste.dll
+C:\Senai_FullStack\UC15\Encontro Remoto 2\Projeto_teste\Projeto_teste\Projeto_teste\obj\Debug\net6.0\refint\Projeto_teste.dll
+C:\Senai_FullStack\UC15\Encontro Remoto 2\Projeto_teste\Projeto_teste\Projeto_teste\obj\Debug\net6.0\Projeto_teste.pdb
+C:\Senai_FullStack\UC15\Encontro Remoto 2\Projeto_teste\Projeto_teste\Projeto_teste\obj\Debug\net6.0\ref\Projeto_teste.dll
